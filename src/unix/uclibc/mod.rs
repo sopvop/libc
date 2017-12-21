@@ -1400,6 +1400,9 @@ pub const FILENAME_MAX: ::c_uint = 4095;
 
 pub const AF_MAX: ::c_int = 39;
 
+pub const GRND_NONBLOCK: ::c_uint = 0x0001;
+pub const GRND_RANDOM: ::c_uint = 0x0002;
+
 f! {
     pub fn FD_CLR(fd: ::c_int, set: *mut fd_set) -> () {
         let fd = fd as usize;
